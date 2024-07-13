@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 8vh;
+  width: 100%;
+}
+
+.lineBlue {
+  display: flex;
+  align-self: center;
+  border: none;
+  border-top: 25px solid #035b99; /* Cambia 'blue' por el tono de azul que desees */
+  width: 75%; /* Ancho de la línea */
+  margin: 0px auto; /* Centrar la línea horizontalmente */
+}
+
+.content {
+  display: flex;
+  align-self: center;
+  width: 75%;
+  height: 13vh;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+  border: 1px solid gray;
+  margin-top: 2px;
+}
+
+.logo img {
+  display: flex;
+  width: 35vh;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  align-items: flex-end;
+  border: 1px solid gray;
+  height: 100%;
+}
+
+.text h1 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+
+.text a {
+  margin: 10px 0;
+}
+
+.text p {
+  text-align: end;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 4.5px;
+  border: 1px solid gray; 
+  width: 100%;
+}
