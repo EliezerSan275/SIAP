@@ -1,0 +1,23 @@
+.menu-principal {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-principal p {
+  margin: 0;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+.menu-principal:hover .submenu {
+  display: block;
+}

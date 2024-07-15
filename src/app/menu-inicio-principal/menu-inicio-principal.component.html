@@ -1,0 +1,6 @@
+<div class="menu-principal">
+     <p (mouseover)="mostrarSubMenu = true" (mouseleave)="mostrarSubMenu = false">{{menuPrin}}</p>
+     <div @if(mostrarSubMenu) class="submenu" >
+         <app-menu-inicio-sub-menu [subMenu]="subMenu"></app-menu-inicio-sub-menu>
+     </div>
+ </div>

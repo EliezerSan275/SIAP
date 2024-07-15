@@ -1,0 +1,41 @@
+.grupo-elementos {
+     background-color: #f0f0f0;
+     padding: 20px;
+     border: 1px solid #ccc;
+     margin-bottom: 20px;
+ }
+ 
+ /* Estilos para la imagen dentro de grupo-elementos */
+ .grupo-elementos img {
+     width: 50px;
+     height: 50px;
+     margin-right: 10px;
+ }
+ 
+ /* Estilos para el texto dentro de grupo-elementos */
+ .grupo-elementos p {
+     font-size: 18px;
+     font-weight: bold;
+     color: #333;
+     margin-bottom: 10px;
+ }
+ 
+ /* Estilos para la línea hr dentro de grupo-elementos */
+ .grupo-elementos hr {
+     border: none;
+     border-top: 1px solid #ccc;
+     margin: 10px 0;
+ }
+
+ .menu-items {
+     /* Estilos para los elementos hijos */
+     display: flex; /* Mostrar los elementos en una línea */
+     flex-direction: column;
+     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+ }
+ 
+ .app-menu-inicio-principal {
+     /* Estilos para cada componente hijo */
+     flex: 0 0 calc(50% - 20px); /* Ancho del 50%, menos el espacio entre los elementos */
+     margin: 10px; /* Espacio entre los elementos */
+ }
