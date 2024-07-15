@@ -1,0 +1,168 @@
+/* Estilos base */
+.header-container {
+     width: 90%;
+     margin: 0 auto; /* Centrado horizontal */
+     padding-top: 3vh; /* Elimina el margen superior */
+     display: flex;
+     flex-direction: column;
+   }
+
+   .formatLoad {
+     width: 90%;
+     margin: 0 auto; /* Centrado horizontal */
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+   }
+   
+   .section {
+     margin-bottom: 0px; /* Espacio entre secciones */
+   }
+   
+   .section1 {
+     height: 30px; /* Altura del relleno con color */
+     background-color: #035b99; /* Color de relleno */
+   }
+   
+   .section2 {
+     display: flex;
+     flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+   }
+   
+   .half {
+     width: 100%;
+     padding: 10px;
+     display: flex;
+     background-color: white;
+     position: relative;
+   }
+   
+   .half::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%); /* Centra la línea verticalmente */
+     width: 1px;
+     height: 100%;
+     background-color: #ccc; /* Color de la línea */
+   }
+   
+   .logo {
+     max-width: 200px; /* Ajusta el ancho máximo del logo */
+     height: auto;
+   }
+   
+   .left {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .right {
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+   }
+   
+   .text-row {
+     margin-top: 0;
+     height: 100%;
+   }
+   
+   .text-row div {
+     text-align: right;
+   }
+   
+   .gerencia {
+     font-weight: bold;
+     font-size: 1.2em;
+     margin-bottom: 8px;
+     color: #035b99;
+   }
+   
+   .pag {
+     font-style: italic;
+     cursor: pointer;
+     font-size: 1em;
+     margin-bottom: 8px;
+   }
+   
+   .pag:hover {
+     color: #035b99;
+   }
+   
+   .formato {
+     font-weight: bold;
+     font-size: 1.2em;
+     color: #035b99;
+   }
+   
+   .section3 {
+     display: flex;
+     justify-content: space-between;
+     background-color: #035b99;
+     color: white;
+     border-bottom: 1px solid #ccc; /* Borde inferior */
+     height: 30px;
+   }
+   
+   .part {
+     flex: 1; /* Ajusta el ancho según la división requerida */
+     padding: 10px;
+     text-align: center;
+     border-left: 1px solid #ccc;
+   }
+   
+   .section4 {
+     height: 30px;
+     background-color: #035b99;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .centered-text {
+     font-size: 1.3em;
+     font-weight: bold;
+     color: white;
+   }
+   
+   /* Media Queries para dispositivos móviles */
+   @media (max-width: 768px) {
+     .header-container {
+       width: 100%;
+       padding-top: 20px; /* Ajusta el padding superior para pantallas más pequeñas */
+     }
+   
+     .half {
+       flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+     }
+   
+     .left, .right {
+       width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
+       justify-content: center; /* Centra el contenido */
+       align-items: center; /* Centra el contenido */
+     }
+   
+     .half::before {
+       left: 0; /* Coloca la línea al principio en pantallas pequeñas */
+       top: 50%;
+       transform: translateY(-50%); /* Centra la línea horizontalmente */
+       width: 100%;
+       height: 1px; /* Cambia a línea horizontal */
+     }
+   
+     .part {
+       border-left: none; /* Quita el borde izquierdo en pantallas pequeñas */
+       border-top: 1px solid #ccc; /* Añade borde superior */
+       padding: 5px; /* Ajusta el padding */
+     }
+   
+     .section3 {
+       margin-bottom: 0; /* Elimina el espacio adicional entre secciones */
+     }
+   }
+   
