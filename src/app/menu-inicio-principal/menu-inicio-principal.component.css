@@ -1,0 +1,45 @@
+.menu-principal {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 15vw;
+  background-color: #d1d5df;
+  height: 5.5vh;
+}
+
+.menu-principal p {
+  margin: 0;
+}
+
+.submenu {
+  position: absolute; /* Posiciona el submenú relativo al contenedor principal */
+  top: 0; /* Ajusta según sea necesario para alinear verticalmente */
+  left: 100%; /* Mueve el submenú a la derecha del contenedor principal */
+  background-color: white;
+  padding: 0px;
+  margin-right: 25px;
+  display: none; /* Oculto por defecto */
+  width: 15vw;
+}
+
+.menu-principal:hover .submenu {
+  display: block;
+}
+
+.menu-principal:hover {
+  background: #555555;
+  color: white;
+}
+
+.menu-principal:hover ul{
+  color: white;
+}
+
+.menu-item-prin {
+  margin: 15px 0;
+  padding: 0;
+  height: 100%;
+  color: #1c3359;
+  text-align: start;
+  font-weight: bold;
+}

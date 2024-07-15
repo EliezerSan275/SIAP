@@ -1,0 +1,28 @@
+.submenu-item {
+  padding: 0px;
+  cursor: pointer;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #a8abb4;
+  color: #1c3359;
+}
+
+.submenu-item li {
+  display: flex; /* Utiliza flexbox en los <li> */
+  align-items: center; /* Alinea el contenido verticalmente al centro */
+  justify-content: flex-start; /* Alinea el contenido horizontalmente al centro */
+  list-style-type: none; /* Elimina los puntos de lista */
+  height: 5.5vh;
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+  text-align: center; /* Alinea el texto al centro */
+  padding-left: 10px; /* Añade espacio en el lado izquierdo */
+  text-align: left; /* Alinea el texto al inicio (izquierda) */
+}
+
+.submenu-item li:hover {
+  background-color: #3c404b;
+  color: white;
+}
