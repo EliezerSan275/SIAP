@@ -1,0 +1,11 @@
+<div class="tlt-container">
+     <label class="tituloRenglon" for="">Cantidad</label>
+     <div class="orden-horizontal">
+          <label class="etiqueta-1" for="">$</label>
+          <input class="inputMoneda" type="number" name="moneda" id="">
+          <div class="orden-vertical">
+               <label for="">Saldo disponible</label>
+               <label class="money" for="">{{ saldo | currency:'':'$':'1.2-2' }}</label>
+          </div>
+     </div>
+   </div>

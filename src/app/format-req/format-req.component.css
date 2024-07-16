@@ -1,0 +1,67 @@
+.section-1 {
+  display: flex;
+  background-color: white;
+  border: 1px solid white; /* Añade borde para visualización */
+}
+
+.checks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 8vh;
+  gap: 50px;
+}
+
+.valoresDefecto {
+  display: flex;
+  height: 8vh;
+  width: 70%;
+}
+
+.horizontal-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #ccc; /* Añade borde para visualización */
+}
+
+.etiquetas {
+  background-color: var(--azul-domo);
+  color: white;
+  font-weight: bold;
+}
+
+.horizontal-item > mat-form-field {
+  width: 100%; /* Asegúrate de que el campo de formulario ocupe todo el contenedor */
+  padding-top: 20px;
+  height: 100%;
+}
+
+.horizontal-item.calendario {
+  background-color: #e0f7fa; /* Cambia el fondo de color según tus necesidades */
+}
+
+.full-height {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Asegúrate de que el mat-form-field ocupe toda la altura del contenedor */
+}
+
+/* ---------------------- seccion de listas desplegables ----------------------*/
+.section-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.segmento-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+.segmento-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}

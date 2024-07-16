@@ -1,1 +1,75 @@
-<p>format-req works!</p>
+<div class="content-sections">
+  <div class="section-1">
+    <div class="checks">
+      <div class="checkbox-container">
+        <input type="checkbox" id="fractura" />
+        <label for="fractura">Fractura</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="OrdenCompra" />
+        <label for="fractura">Orden de Compra</label>
+      </div>
+    </div>
+
+    <div class="valoresDefecto">
+      <div class="horizontal-item etiquetas">
+        <label for="">Fecha: </label>
+      </div>
+      <div class="horizontal-item">
+        <label class="valores" for="">2024-07-12</label>
+      </div>
+      <div class="horizontal-item etiquetas">
+        <label for="">Hora: </label>
+      </div>
+      <div class="horizontal-item">
+        <label class="valores" for="">15:58:53</label>
+      </div>
+      <div class="horizontal-item etiquetas">
+        <label for="">Surtir antes del: </label>
+      </div>
+      <div class="horizontal-item">
+        <mat-form-field appearance="fill">
+          <mat-label>Elegir fecha</mat-label>
+          <input matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-2">
+    <div class="segmento-4">
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[0] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[1] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[2] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[3] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+    </div>
+  </div>
+
+  <div class="section-3">
+    <div class="segmento-3">
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[4] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+      <app-platilla-tlt-un-tercio
+        [saldo]="saldoDisponible"
+      ></app-platilla-tlt-un-tercio>
+      <app-grupo-botones></app-grupo-botones>
+    </div>
+  </div>
+</div>
