@@ -64,4 +64,5 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  background-color: white;
 }

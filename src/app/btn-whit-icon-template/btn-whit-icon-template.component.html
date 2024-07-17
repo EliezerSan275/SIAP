@@ -1,0 +1,12 @@
+<div class="contenedorBtn">
+     <button
+     class="boton"
+     (click)="onClick()"
+     [ngClass]="{ 'custom-background': color }"
+     [style.--dynamic-background]="color"
+     (mouseenter)="toggleHover(true)"
+     (mouseleave)="toggleHover(false)"
+     >
+       <i [ngClass]="icono" aria-hidden="true"></i>
+     </button>
+   </div>

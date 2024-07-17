@@ -11,6 +11,7 @@ import { Component, Input } from '@angular/core';
 export class PlatillaTltUnTercioComponent {
 
   @Input() saldo!: number;
+  @Input() desLabel!: String;
 
   constructor(){}
 }

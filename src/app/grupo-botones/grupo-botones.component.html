@@ -1,3 +1,6 @@
 <div class="grupo-botones">
-     <app-boton-templade labelBtn="{{labelBotones}}"></app-boton-templade>
+  <ng-container *ngFor="let boton of botonesIcon">
+    <!-- <app-boton-templade [texto]="boton.texto" [accion]="boton.accion"></app-boton-templade> -->
+     <app-btn-whit-icon-template [icono]="boton.icono" [color]="boton.background" [accion]="boton.accion"></app-btn-whit-icon-template>
+  </ng-container>
 </div>

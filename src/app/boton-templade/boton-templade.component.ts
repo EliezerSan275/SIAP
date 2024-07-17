@@ -1,13 +1,20 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-boton-templade',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './boton-templade.component.html',
   styleUrl: './boton-templade.component.css'
 })
-export class BotonTempladeComponent {
+export class BotonTempladeComponent{
+  @Input() texto!: string;
+  @Input() accion!: () => void;
 
-  @Input() labelBtn!: String;
+  onClick() {
+    if (this.accion) {
+      this.accion();
+    }
+  }
 }

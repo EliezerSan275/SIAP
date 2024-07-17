@@ -67,9 +67,14 @@
         desLabel="{{ nameLabels[4] }}"
       ></app-plantilla-dropdow-un-cuarto>
       <app-platilla-tlt-un-tercio
+      desLabel="{{ nameLabels[5] }}"
         [saldo]="saldoDisponible"
       ></app-platilla-tlt-un-tercio>
-      <app-grupo-botones></app-grupo-botones>
+      <!-- <app-grupo-botones></app-grupo-botones> -->
     </div>
+  </div>
+
+  <div class="section-4">
+    <app-table-templade [columnLabels]="nameLabels"></app-table-templade>
   </div>
 </div>
