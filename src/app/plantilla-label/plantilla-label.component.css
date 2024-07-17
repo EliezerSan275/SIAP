@@ -1,4 +1,4 @@
-.dropdown-item {
+.label-item {
      display: flex;
      flex-direction: column;
      align-items: start;
@@ -6,16 +6,16 @@
      height: 8vh;
    }
    
-   .dropdown-item label {
+   .tiLabel {
      background-color: var(--azul-domo);
      margin-bottom: 5px;
-     width: calc(100% - 4.3vh);
+     width: 100%;
      color: white;
      padding: 0 20px;
      border-left: 1px solid #ccc; /* Añade borde para visualización */
    }
    
-   .dropdown-item select {
+   .vaLabel {
      width: 95%;
      height: 4vh;
      padding: 4px;

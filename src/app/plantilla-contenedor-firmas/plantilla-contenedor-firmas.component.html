@@ -1,0 +1,10 @@
+<div class="grupo-firmas">
+  <ng-container *ngFor="let firma of firmas">
+    <app-plantilla-firma-template
+      [title]="firma.title"
+      [imgFirma]="firma.imgFirma"
+      [nombre]="firma.nombre"
+      [cargo]="firma.cargo"
+    ></app-plantilla-firma-template>
+  </ng-container>
+</div>

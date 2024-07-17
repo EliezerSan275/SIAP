@@ -1,6 +1,22 @@
 <div class="grupo-botones">
-  <ng-container *ngFor="let boton of botonesIcon">
-    <!-- <app-boton-templade [texto]="boton.texto" [accion]="boton.accion"></app-boton-templade> -->
-     <app-btn-whit-icon-template [icono]="boton.icono" [color]="boton.background" [accion]="boton.accion"></app-btn-whit-icon-template>
+  <!-- ESTE TIPO DE BOTON ES CON TEXTO Y ACCION -->
+  <ng-container *ngIf="codigo === '1'">
+    <ng-container *ngFor="let boton of botones">
+      <app-boton-templade
+        [texto]="boton.texto"
+        [accion]="boton.accion"
+      ></app-boton-templade>
+    </ng-container>
+  </ng-container>
+
+  <!-- ESTE TIPO DE BOTONES ES SIN TEXTO SOLO CON ICONO Y ALGUNA ACCION -->
+  <ng-container *ngIf="codigo === '2'">
+    <ng-container *ngFor="let boton of botonesIcon">
+      <app-btn-whit-icon-template
+        [icono]="boton.icono"
+        [color]="boton.background"
+        [accion]="boton.accion"
+      ></app-btn-whit-icon-template>
+    </ng-container>
   </ng-container>
 </div>

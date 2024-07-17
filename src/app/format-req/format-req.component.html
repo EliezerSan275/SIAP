@@ -42,39 +42,68 @@
   </div>
 
   <div class="section-2">
-    <div class="segmento-4">
-      <app-plantilla-dropdow-un-cuarto
-        desLabel="{{ nameLabels[0] }}"
-      ></app-plantilla-dropdow-un-cuarto>
+    <div class="segmento-2">
+      <app-plantilla-label
+        tiLabel="{{ nameLabels[0] }}"
+        vaLabel="DIND-CAD-REQ-000348"
+      ></app-plantilla-label>
 
       <app-plantilla-dropdow-un-cuarto
         desLabel="{{ nameLabels[1] }}"
       ></app-plantilla-dropdow-un-cuarto>
-
-      <app-plantilla-dropdow-un-cuarto
-        desLabel="{{ nameLabels[2] }}"
-      ></app-plantilla-dropdow-un-cuarto>
-
-      <app-plantilla-dropdow-un-cuarto
-        desLabel="{{ nameLabels[3] }}"
-      ></app-plantilla-dropdow-un-cuarto>
     </div>
-  </div>
 
-  <div class="section-3">
-    <div class="segmento-3">
-      <app-plantilla-dropdow-un-cuarto
-        desLabel="{{ nameLabels[4] }}"
-      ></app-plantilla-dropdow-un-cuarto>
-      <app-platilla-tlt-un-tercio
-      desLabel="{{ nameLabels[5] }}"
-        [saldo]="saldoDisponible"
-      ></app-platilla-tlt-un-tercio>
-      <!-- <app-grupo-botones></app-grupo-botones> -->
+    <div class="section-3">
+      <div class="segmento-4">
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[2] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[3] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[4] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[5] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+      </div>
     </div>
-  </div>
 
-  <div class="section-4">
-    <app-table-templade [columnLabels]="nameLabels"></app-table-templade>
+    <div class="section-4">
+      <div class="segmento-3">
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[6] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+        <app-platilla-tlt-un-tercio
+          desLabel="{{ nameLabels[7] }}"
+          [saldo]="saldoDisponible"
+        ></app-platilla-tlt-un-tercio>
+        <app-grupo-botones codigo="1"></app-grupo-botones>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <app-table-templade [columnLabels]="nameLabels"></app-table-templade>
+    </div>
+
+    <div class="section-5">
+      <app-plantilla-label-input
+        tiLabel="Comentario"
+      ></app-plantilla-label-input>
+    </div>
+
+    <div class="section-6">
+      <app-plantilla-contenedor-firmas></app-plantilla-contenedor-firmas>
+    </div>
+
+    <div class="section-7">
+      <app-boton-templade 
+      texto="Enviar Requisición"
+      (accion)="addRequisicion()"></app-boton-templade>
+    </div>
   </div>
 </div>

@@ -1,7 +1,6 @@
 <table class="custom-table">
   <thead>
     <tr>
-      <th>Codigo</th>
       <th *ngFor="let label of columnLabels">{{ label }}</th>
       <th>Acciones</th>
     </tr>
@@ -15,8 +14,9 @@
          <td>{{ item.col5 }}</td>
          <td>{{ item.col6 }}</td>
          <td>{{ item.col7 }}</td>
+         <td>{{ item.col8 }}</td>
          <td>
-           <app-grupo-botones></app-grupo-botones>
+           <app-grupo-botones codigo="2"></app-grupo-botones>
          </td>
        </tr>
      </tbody>

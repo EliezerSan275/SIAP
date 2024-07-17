@@ -11,6 +11,7 @@ interface TableItem {
   col5: string;
   col6: string;
   col7: string;
+  col8: number;
 }
 
 @Component({
@@ -26,8 +27,8 @@ export class TableTempladeComponent {
   
   data: TableItem[] = [
     // Aquí puedes inicializar tu arreglo de datos según tus necesidades
-    { col1: 'Dato 1', col2: 'Dato 2', col3: 'Dato 3', col4: 'Dato 4', col5: 'Dato 5', col6: 'Dato 6', col7: 'Dato 6' },
-    { col1: 'Dato 7', col2: 'Dato 8', col3: 'Dato 9', col4: 'Dato 10', col5: 'Dato 11', col6: 'Dato 12', col7: 'Dato 13' }
+    { col1: 'Dato 1', col2: 'Dato 2', col3: 'Dato 3', col4: 'Dato 4', col5: 'Dato 5', col6: 'Dato 6', col7: 'Dato 6', col8:5000 },
+    { col1: 'Dato 7', col2: 'Dato 8', col3: 'Dato 9', col4: 'Dato 10', col5: 'Dato 11', col6: 'Dato 12', col7: 'Dato 13', col8:5000 }
   ];
 
   constructor(private sharedDataService: SharedDataService) {}
@@ -37,7 +38,7 @@ export class TableTempladeComponent {
   }
 
   botones = [
-    { icono:'fa fa-pencil-square', background:'orange', accion: () => this.add() },
+    { icono:'fa fa-pencil', background:'orange', accion: () => this.add() },
      { icono:'fa fa-trash', background:'red', accion: () => this.add() },
   ];
 

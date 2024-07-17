@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { BotonTempladeComponent } from "../boton-templade/boton-templade.component";
 import { CommonModule } from '@angular/common';
 import { BotonOnlyText } from '../shared-data.model';
@@ -17,6 +17,7 @@ export class GrupoBotonesComponent {
   // SIRVE PARA LLENAR LOS DATOS DEL BOTON ES DECIR EL TEXTO Y LA ACCION A REALIZAR
   botones: BotonOnlyText[] = [];
   botonesIcon: BotonWithIcon[] = [];
+  @Input() codigo!:String;
 
   constructor(private sharedDataService: SharedDataService) {}
 

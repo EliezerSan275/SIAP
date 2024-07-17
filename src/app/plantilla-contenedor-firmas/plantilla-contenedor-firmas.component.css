@@ -1,0 +1,10 @@
+.grupo-firmas {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /*Columnas automáticas con mínimo de 50px y maximo de 150*/
+     background-color: rgb(255, 255, 255);
+     height: 100%;
+     width: 100%;
+     text-align: center;
+     justify-content: center;
+     align-content: center;
+   }
