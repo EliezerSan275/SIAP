@@ -1,0 +1,29 @@
+.input-item {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     background-color: white;
+     height: 15vh;
+   }
+   
+   .tiLabel {
+     background-color: var(--azul-domo);
+     margin-bottom: 5px;
+     width: calc(100% - 4.3vh);
+     color: white;
+     padding: 0 20px;
+     border-left: 1px solid #ccc; /* Añade borde para visualización */
+   }
+   
+   .textArea {
+     display: flex;
+     justify-self: center;
+     align-self: center;
+     width: 95%;
+     font-size: 1.5em;
+     padding: 4px;
+     box-sizing: border-box;
+     resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+     outline: none;
+   }
+   

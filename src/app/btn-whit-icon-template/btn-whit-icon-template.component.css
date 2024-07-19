@@ -1,0 +1,25 @@
+.boton {
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 10px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño del texto */
+  display: flex; /* Utiliza flexbox para alinear ícono y texto */
+  align-items: center; /* Centra verticalmente ícono y texto */
+}
+
+.boton i {
+  font-size: 1.2em; /* Tamaño del ícono ajustado */
+}
+
+.custom-background {
+  background-color: var(--dynamic-background); /* Utiliza una variable CSS para el fondo */
+  transition: background-color 0.3s ease; /* Transición del color de fondo */
+
+  &:hover {
+    background-color: rgb(255, 255, 255); /* Color de fondo al 50% de opacidad */
+    border: 0.5px solid var(--dynamic-background);
+    color: var(--dynamic-background);  
+  }  
+}

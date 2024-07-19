@@ -1,42 +1,40 @@
-<div class="header-container">
-  <!-- Sección 1: Relleno con color -->
-  <div class="section section1"></div>
+<div class="ng-container" *ngFor="let data of dataFormat">
+  <div class="header-container">
+    <!-- Sección 1: Relleno con color -->
+    <div class="section section1"></div>
 
-  <!-- Sección 2: Dividida en mitades -->
-  <div class="section section2">
-    <div class="half">
-     <div class="left">
+    <!-- Sección 2: Dividida en mitades -->
+    <div class="section section2">
+      <div class="half">
+        <div class="left">
           <!-- Aquí va la imagen -->
-          <img src="/logos/domo/logo-domo.png" alt="Imagen" class="logo" />
+          <img src="/logos/domo/{{data.logo}}" alt="Imagen" class="logo" />
         </div>
         <div class="right">
           <!-- Textos verticales -->
           <div class="text-row">
-            <div class="gerencia">Gerencia de Administración y Finanzas</div>
-            <div class="pag">http://www.dind.mx/</div>
-            <div class="formato">Crear Requisicion</div>
+            <div class="gerencia">{{ data.gerencia }}</div>
+            <div class="pag">{{data.web}}</div>
+            <div class="formato">{{data.nameFormat}}</div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Sección 3: Dividida en 6 partes -->
+    <div class="section section3">
+      <!-- Puedes definir las 6 partes aquí -->
+      <div class="part">CODIGO</div>
+      <div class="part">{{data.codigoFormat}}</div>
+      <div class="part">REV.</div>
+      <div class="part">00</div>
+      <div class="part">FECHA REV.</div>
+      <div class="part">2024-07-15</div>
+    </div>
+
+    <!-- Sección 4: Similar a la sección 1 con texto en el centro -->
+    <div class="section section4">
+      <div class="centered-text">{{data.titleFormat}}</div>
     </div>
   </div>
-
-  <!-- Sección 3: Dividida en 6 partes -->
-  <div class="section section3">
-    <!-- Puedes definir las 6 partes aquí -->
-    <div class="part">CODIGO</div>
-    <div class="part">DIND-GAF-RC.12</div>
-    <div class="part">REV.</div>
-    <div class="part">00</div>
-    <div class="part">FECHA REV.</div>
-    <div class="part">2024-07-15</div>
-  </div>
-
-  <!-- Sección 4: Similar a la sección 1 con texto en el centro -->
-  <div class="section section4">
-    <div class="centered-text">REQUISICION</div>
-  </div>
-</div>
-
-<div class="formatLoad">
-     <app-format-req></app-format-req>
 </div>

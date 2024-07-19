@@ -1,0 +1,22 @@
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th *ngFor="let label of columnLabels">{{ label }}</th>
+    </tr>
+  </thead>
+     <tbody>
+      <tr *ngFor="let item of data; let i = index" [ngClass]="{'even-row': i % 2 === 0, 'odd-row': i % 2 !== 0}">
+        <td *ngFor="let key of getColumnKeys(item)">
+          {{ item[key] }}
+        </td>
+        <td *ngIf="isLastColumnAcciones()">
+          <app-grupo-botones codigo="2"></app-grupo-botones>
+        </td>
+        <td *ngIf="isLastColumnSeleccionar()">
+          <div class="checkbox-container">
+            <input type="checkbox" id="fractura" />
+          </div>
+        </td>
+      </tr>
+     </tbody>
+   </table>

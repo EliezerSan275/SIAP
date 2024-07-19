@@ -1,0 +1,58 @@
+<div class="content-sections">
+  <div class="section-1">
+    <div class="plantillaLabel">
+      <app-plantilla-label
+        tiLabel="{{ nameLabels[0] }}"
+        vaLabel="DIND-CAD-REQ-000348"
+      ></app-plantilla-label>
+    </div>
+    <div class="plantillaFechaHora">
+      <app-plantilla-fecha-hora></app-plantilla-fecha-hora>
+    </div>
+  </div>
+
+  <div class="section-2">
+    <div class="segmento-2">
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[2] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+
+      <app-plantilla-label-input
+        tiLabel="Telefono"
+      ></app-plantilla-label-input>
+
+  </div>
+
+  <div class="section-3">
+    <app-table-templade [columnLabels]="dataRequisicion"></app-table-templade>
+  </div>
+
+  <div class="section-4">
+    <app-boton-templade
+      texto="Agregar a Orden Compra"
+      (accion)="addPartidaOrdenCompra()"
+    ></app-boton-templade>
+  </div>
+
+  <div class="section-5">
+    <app-table-templade [columnLabels]="dataRequisicion"></app-table-templade>
+  </div>
+
+  <div class="section-6">
+    <app-plantilla-label-area
+      tiLabel="Comentarios adicionales"
+    ></app-plantilla-label-area>
+  </div>
+
+  <div class="section-7">
+    <app-plantilla-contenedor-firmas></app-plantilla-contenedor-firmas>
+  </div>
+
+  <div class="section-8">
+    <app-boton-templade
+      texto="Enviar Orden"
+      (accion)="addPartidaOrdenCompra()"
+    ></app-boton-templade>
+  </div>
+</div>

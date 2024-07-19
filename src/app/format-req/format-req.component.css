@@ -1,0 +1,58 @@
+.section-1 {
+  display: flex;
+  background-color: white;
+  border: 1px solid white; /* Añade borde para visualización */
+}
+
+.checks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 8vh;
+  gap: 50px;
+}
+
+.plantillaFechaHora {
+  height: 8vh;
+  width: 70%;
+}
+/* ---------------------- seccion de listas desplegables ----------------------*/
+.section-3 {
+  display: flex;
+  justify-content: center;
+}
+.section-5 {
+  height: 15vh;
+}
+
+.section-6 {
+  height: 25vh;
+}
+
+.section-7 {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: white;
+}
+
+.segmento-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.segmento-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.segmento-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  background-color: white;
+}

@@ -1,1 +1,90 @@
-<p>format-req works!</p>
+<div class="content-sections">
+  <div class="section-1">
+    <div class="checks">
+      <div class="checkbox-container">
+        <input type="checkbox" id="fractura" />
+        <label for="fractura">Fractura</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="OrdenCompra" />
+        <label for="fractura">Orden de Compra</label>
+      </div>
+    </div>
+
+    <div class="plantillaFechaHora">
+      <app-plantilla-fecha-hora></app-plantilla-fecha-hora>
+    </div>
+  </div>
+
+  <div class="section-2">
+    <div class="segmento-3">
+      <app-plantilla-label
+        tiLabel="{{ nameLabels[0] }}"
+        vaLabel="DIND-CAD-REQ-000348"
+      ></app-plantilla-label>
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[1] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[1] }}"
+      ></app-plantilla-dropdow-un-cuarto>
+    </div>
+  </div>
+
+
+    <div class="section-3">
+      <div class="segmento-4">
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[2] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[3] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[4] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[5] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <div class="segmento-3">
+        <app-plantilla-dropdow-un-cuarto
+          desLabel="{{ nameLabels[6] }}"
+        ></app-plantilla-dropdow-un-cuarto>
+        <app-platilla-tlt-un-tercio
+          desLabel="{{ nameLabels[7] }}"
+          [saldo]="saldoDisponible"
+        ></app-platilla-tlt-un-tercio>
+        <app-grupo-botones codigo="1"></app-grupo-botones>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <app-table-templade [columnLabels]="nameLabels"></app-table-templade>
+    </div>
+
+    <div class="section-5">
+      <app-plantilla-label-area
+        tiLabel="Comentario"
+      ></app-plantilla-label-area>
+    </div>
+
+    <div class="section-6">
+      <app-plantilla-contenedor-firmas></app-plantilla-contenedor-firmas>
+    </div>
+
+    <div class="section-7">
+      <app-boton-templade
+        texto="Enviar Requisición"
+        (accion)="addRequisicion()"
+      ></app-boton-templade>
+    </div>
+  </div>

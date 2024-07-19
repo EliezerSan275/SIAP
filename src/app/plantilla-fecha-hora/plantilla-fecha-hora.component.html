@@ -1,0 +1,32 @@
+<div class="valoresDefecto">
+  <div class="horizontal-item etiquetas">
+    <label for="">Fecha: </label>
+  </div>
+  <div class="horizontal-item">
+    <label class="valores" for="">{{ currentDateTime | dateTimeFormat:'date' }}</label>
+  </div>
+  <div class="horizontal-item etiquetas">
+    <label for="">Hora: </label>
+  </div>
+  <div class="horizontal-item">
+    <label class="valores" for="">{{ currentDateTime | dateTimeFormat:'time' }}</label>
+  </div>
+  <div class="horizontal-item etiquetas">
+    <label for="">Surtir antes del: </label>
+  </div>
+  <div class="horizontal-item">
+    <mat-form-field appearance="fill">
+      <mat-label>Elegir fecha</mat-label>
+      <input matInput [matDatepicker]="picker" [formControl]="nextDay" [matDatepickerFilter]="myFilter"/>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <!-- <mat-form-field appearance="fill">
+      <mat-label>Elegir fecha</mat-label>
+      <input matInput [matDatepicker]="picker" [formControl]="nextDay" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field> -->
+  </div>
+</div>

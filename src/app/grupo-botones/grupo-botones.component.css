@@ -1,0 +1,11 @@
+.grupo-botones {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /*Columnas automáticas con mínimo de 50px y maximo de 150*/
+     gap: 25px; /* Espacio entre botones */
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(255, 255, 255, 0);
+     height: 100%;
+     width: 100%;
+     text-align: center;
+   }

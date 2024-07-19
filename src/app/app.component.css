@@ -2,4 +2,12 @@
      height: 100%;
      width: 100%;
      background-color: #d1d5df;
+     overflow: auto;
+     scrollbar-width: none;
+     margin-bottom: 50px;
 }
+
+.content::-webkit-scrollbar {
+     width: 0px; /* Oculta las barras de desplazamiento en Chrome, Safari y Opera */
+     background: transparent; /* Asegura que el fondo del scroll sea transparente */
+   }

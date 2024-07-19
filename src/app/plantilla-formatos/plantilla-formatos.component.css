@@ -1,0 +1,7 @@
+.formatLoad {
+     width: 90%;
+     margin: 0 auto; /* Centrado horizontal */
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+   }
