@@ -1,23 +1,28 @@
 .label-item {
-     display: flex;
-     flex-direction: column;
-     align-items: start;
-     background-color: white;
-     height: 8vh;
-   }
-   
-   .tiLabel {
-     background-color: var(--azul-domo);
-     margin-bottom: 5px;
-     width: 100%;
-     color: white;
-     padding: 0 20px;
-     border-left: 1px solid #ccc; /* Añade borde para visualización */
-   }
-   
-   .vaLabel {
-     width: 95%;
-     height: 4vh;
-     padding: 4px;
-     margin-left: 10px;
-   }
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  height: 8vh;
+}
+
+.tiLabel {
+  background-color: var(--azul-domo);
+  margin-bottom: 5px;
+  width: 100%;
+  color: white;
+  padding: 0 20px;
+  border-left: 1px solid #ccc; /* Añade borde para visualización */
+}
+
+.vaLabel {
+  width: 95%;
+  height: 8vh;
+  padding: 4px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 15px;
+}

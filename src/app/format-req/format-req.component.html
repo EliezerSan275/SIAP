@@ -11,38 +11,13 @@
       </div>
     </div>
 
-    <div class="valoresDefecto">
-      <div class="horizontal-item etiquetas">
-        <label for="">Fecha: </label>
-      </div>
-      <div class="horizontal-item">
-        <label class="valores" for="">2024-07-12</label>
-      </div>
-      <div class="horizontal-item etiquetas">
-        <label for="">Hora: </label>
-      </div>
-      <div class="horizontal-item">
-        <label class="valores" for="">15:58:53</label>
-      </div>
-      <div class="horizontal-item etiquetas">
-        <label for="">Surtir antes del: </label>
-      </div>
-      <div class="horizontal-item">
-        <mat-form-field appearance="fill">
-          <mat-label>Elegir fecha</mat-label>
-          <input matInput [matDatepicker]="picker" />
-          <mat-datepicker-toggle
-            matSuffix
-            [for]="picker"
-          ></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-      </div>
+    <div class="plantillaFechaHora">
+      <app-plantilla-fecha-hora></app-plantilla-fecha-hora>
     </div>
   </div>
 
   <div class="section-2">
-    <div class="segmento-2">
+    <div class="segmento-3">
       <app-plantilla-label
         tiLabel="{{ nameLabels[0] }}"
         vaLabel="DIND-CAD-REQ-000348"
@@ -51,7 +26,13 @@
       <app-plantilla-dropdow-un-cuarto
         desLabel="{{ nameLabels[1] }}"
       ></app-plantilla-dropdow-un-cuarto>
+
+      <app-plantilla-dropdow-un-cuarto
+        desLabel="{{ nameLabels[1] }}"
+      ></app-plantilla-dropdow-un-cuarto>
     </div>
+  </div>
+
 
     <div class="section-3">
       <div class="segmento-4">
@@ -91,9 +72,9 @@
     </div>
 
     <div class="section-5">
-      <app-plantilla-label-input
+      <app-plantilla-label-area
         tiLabel="Comentario"
-      ></app-plantilla-label-input>
+      ></app-plantilla-label-area>
     </div>
 
     <div class="section-6">
@@ -101,9 +82,9 @@
     </div>
 
     <div class="section-7">
-      <app-boton-templade 
-      texto="Enviar Requisición"
-      (accion)="addRequisicion()"></app-boton-templade>
+      <app-boton-templade
+        texto="Enviar Requisición"
+        (accion)="addRequisicion()"
+      ></app-boton-templade>
     </div>
   </div>
-</div>

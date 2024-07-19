@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: start;
   background-color: white;
-  height: 15vh;
+  height: 8vh;
 }
 
 .tiLabel {
@@ -15,7 +15,7 @@
   border-left: 1px solid #ccc; /* Añade borde para visualización */
 }
 
-.textArea {
+.input-item input {
   display: flex;
   justify-self: center;
   align-self: center;

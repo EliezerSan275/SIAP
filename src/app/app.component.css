@@ -4,6 +4,7 @@
      background-color: #d1d5df;
      overflow: auto;
      scrollbar-width: none;
+     margin-bottom: 50px;
 }
 
 .content::-webkit-scrollbar {

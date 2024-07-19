@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BotonOnlyText } from './shared-data.model';
 import { BotonWithIcon } from './shared-data.model';
 import { ModelFirmas } from './shared-data.model';
+import { ModelHeaderFormat } from './shared-data.model';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +12,8 @@ export class SharedDataService {
   private botones: BotonOnlyText[] = [];
   private botonwIcon: BotonWithIcon[] = [];
   private modelFirmas: ModelFirmas[] = [];
+  private modelHeaderFormat: ModelHeaderFormat[] = [];
+  private modelRequisicion: string [] = [];
 
   setBotones(botones: BotonOnlyText[]) {
     this.botones = botones;
@@ -34,6 +37,22 @@ export class SharedDataService {
 
   getModelFirma() {
     return this.modelFirmas;
+  }
+
+  setModelHeaderFormat(modelHeaderFormat: ModelHeaderFormat[]) {
+    this.modelHeaderFormat = modelHeaderFormat;
+  }
+
+  getModelHeaderFormat() {
+    return this.modelHeaderFormat;
+  }
+  
+  setModelRequisicion(modelRequisicion: string[]): void {
+    this.modelRequisicion = modelRequisicion;
+  }
+
+  getModelRequisicion(): string[] {
+    return this.modelRequisicion;
   }
 
   constructor() {}

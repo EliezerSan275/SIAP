@@ -11,6 +11,8 @@ import { PlantillaLabelComponent } from "../plantilla-label/plantilla-label.comp
 import { PlantillaLabelInputComponent } from "../plantilla-label-input/plantilla-label-input.component";
 import { PlantillaContenedorFirmasComponent } from "../plantilla-contenedor-firmas/plantilla-contenedor-firmas.component";
 import { BotonTempladeComponent } from '../boton-templade/boton-templade.component';
+import { PlantillaFechaHoraComponent } from '../plantilla-fecha-hora/plantilla-fecha-hora.component';
+import { PlantillaLabelAreaComponent } from '../plantilla-label-area/plantilla-label-area.component';
 @Component({
   selector: 'app-format-req',
   standalone: true,
@@ -25,13 +27,15 @@ import { BotonTempladeComponent } from '../boton-templade/boton-templade.compone
     PlantillaLabelComponent,
     PlantillaLabelInputComponent,
     PlantillaContenedorFirmasComponent,
-    BotonTempladeComponent
+    BotonTempladeComponent,
+    PlantillaFechaHoraComponent,
+    PlantillaLabelAreaComponent
 ],
   templateUrl: './format-req.component.html',
   styleUrl: './format-req.component.css',
 })
 export class FormatREQComponent implements OnInit {
-  nameLabels: String[] = [
+  nameLabels: string[] = [
     'Codigo',
     'Proveedor',
     'Presupuesto',
@@ -39,8 +43,10 @@ export class FormatREQComponent implements OnInit {
     'Area',
     'Tipo de Recurso',
     'Partida',
-    'Cantidad'
+    'Cantidad',
+    'Acciones'
   ];
+
   saldoDisponible: number = 60000;
 
   // CODIGO PARA LA CREACION DE BOTONES (texto y accion) NECESARIOS
@@ -50,11 +56,11 @@ export class FormatREQComponent implements OnInit {
   ngOnInit() {
     this.sharedDataService.setBotones(this.botones);
     this.sharedDataService.setModelFirma(this.firmas);
+    this.sharedDataService.setModelRequisicion(this.nameLabels);
   }
 
   botones = [
-    { texto: 'Agregar', accion: () => this.add() },
-    { texto: 'Agregar', accion: () => this.add() },
+    { texto: 'Agregar Partida', accion: () => this.add() },
   ];
 
   add() {
@@ -62,9 +68,9 @@ export class FormatREQComponent implements OnInit {
     // Aquí iría la lógica para guardar
   }
 
-  pasarInformacion() {
-    this.sharedDataService.setBotones(this.botones);
-  }
+
+
+
 
   // configuracion para las firmas
 

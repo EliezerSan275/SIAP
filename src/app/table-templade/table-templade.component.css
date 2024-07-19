@@ -1,26 +1,31 @@
 .custom-table {
-     width: 100%;
-     border-collapse: collapse;
-   }
-   
-   .custom-table th, .custom-table td {
-     padding: 7px;
-     text-align: left;
-   }
-   
-   .custom-table td {
-    height: 5vh;
-   }
-   
-   .custom-table th {
-     background-color: #f2f2f2;
-   }
-   
-   .custom-table .even-row {
-     background-color: #e6f7ff;
-   }
-   
-   .custom-table .odd-row {
-     background-color: #f2f2f2;
-   }
-   
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 7px;
+  text-align: left;
+}
+
+.custom-table td {
+  height: 5vh;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+}
+
+.custom-table .even-row {
+  background-color: #e6f7ff;
+}
+
+.custom-table .odd-row {
+  background-color: #f2f2f2;
+}
+
+ .checkbox-container {
+  display: flex;
+  justify-content: center;
+}

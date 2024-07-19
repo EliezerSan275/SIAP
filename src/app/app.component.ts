@@ -4,6 +4,7 @@ import { HeaderFromatComponent } from './header-fromat/header-fromat.component';
 import { HeaderPrincipalComponent } from './header-principal/header-principal.component';
 import { HeaderFormatComponent } from './header-format/header-format.component';
 import { PlantillaFormatosComponent } from './plantilla-formatos/plantilla-formatos.component';
+import { ReactiveFormsModule  } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { PlantillaFormatosComponent } from './plantilla-formatos/plantilla-forma
     HeaderPrincipalComponent,
     HeaderFormatComponent,
     PlantillaFormatosComponent,
+    ReactiveFormsModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
