@@ -1,0 +1,16 @@
+.segmento-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.section-1 {
+  display: flex;
+  background-color: white;
+  border: 1px solid white; /* Añade borde para visualización */
+}
+
+app-grupo-botones {
+     display: flex;
+     margin-left: 50px;
+}

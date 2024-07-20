@@ -9,10 +9,9 @@
 .tiLabel {
   background-color: var(--azul-domo);
   margin-bottom: 5px;
-  width: calc(100% - 4.3vh);
+  width: calc(100% - 4.2vh);
   color: white;
   padding: 0 20px;
-  border-left: 1px solid #ccc; /* Añade borde para visualización */
 }
 
 .input-item input {
